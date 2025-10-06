@@ -1,5 +1,5 @@
 def f(x):
-    return x**3-2*x-7
+    return x**3-3*x+7
 
 a = int(input("Masukkan batas atas = "))
 b = int(input("Masukkan batas bawah = "))
@@ -10,18 +10,19 @@ def tabel(a, b, n):
 
     for i in range(n):
         x = (b+(i*h))
-        y = f(x)
-        if f(y) == 0:
-            print(x[i])
-            return x[i]
+        x_next = x + h    
+
+        if f(x) == 0:
+            print(x)
+            return x
         
-        elif f(x[i])*f(x[i+1]) < 0:
-            if abs(f(x[i])) < abs(f(x[i+1])):
-                print(x[i])
-                return x[i]
+        if f(x)*f(x_next) < 0:
+            if abs(f(x)) < abs(f(x_next)):
+                print(x)
+                return x
             else:
-                print(x[i+1])
-                return x[i+1]
+                print(x_next)
+                return x_next
     print("\nTidak ditemukan perubahan tanda dalam interval tersebut.")
     return None
             
