@@ -1,17 +1,17 @@
 def f(x):
     return x**3-2*x-7
 
-a = float(input("Masukkan batas atas = "))
-b = float(input("Masukkan batas bawah = "))
-n = float(input("Masukkan jumlah iterasi = "))
+a = int(input("Masukkan batas atas = "))
+b = int(input("Masukkan batas bawah = "))
+n = int(input("Masukkan jumlah iterasi = "))
 
-def tabel():
+def tabel(a, b, n):
     h = (a-b)/n
 
     for i in range(n):
         x = (b+(i*h))
-        y = f(x[i])
-        if f(x[i]) == 0:
+        y = f(x)
+        if f(y) == 0:
             print(x[i])
             return x[i]
         
@@ -25,4 +25,5 @@ def tabel():
     print("\nTidak ditemukan perubahan tanda dalam interval tersebut.")
     return None
             
-tabel()
+tabel(a, b, n)
+        
