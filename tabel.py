@@ -15,6 +15,7 @@ def tabel(a, b, n, h):
 
         print (xi, y)
 
+aaa
 
 
     
