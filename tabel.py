@@ -1,7 +1,7 @@
 def f(x):
     return x*3-3*x-7
 
-def batas_atas()
+# def batas_atas()
 
 def tabel(a, b, n, h):
     a = int(input("Masukkan batas atas = "))
@@ -9,7 +9,13 @@ def tabel(a, b, n, h):
     n = int(input("Masukkan jumlah iterasi = "))
     h = (a-b)/n
 
-    for i in range:
-        x = 
+    for i in range(0, n+1):
+        xi = (b+(i*h))
+        y = f(xi)
+
+        print (xi, y)
+
+
+
     
     
