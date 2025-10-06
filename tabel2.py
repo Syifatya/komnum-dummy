@@ -34,14 +34,16 @@ def tabel(a, b, n):
 
         if fx == 0:
             akar = x
+            iterasi = i
         elif fx * fx_next < 0:
             if abs(fx) < abs(fx_next):
                 akar = x
             else:
                 akar = x_next
+                iterasi = i + 1
 
-    if akar is not None:
-        print(f"\nPendekatan akar berada di x = {akar:.4f}")
+if akar is not None:
+        print(f"\nPendekatan akar berada di iterasi = {iterasi:} dan x = {akar:.4f}")
     else:
         print("\nTidak ditemukan perubahan tanda dalam interval tersebut.")
 
