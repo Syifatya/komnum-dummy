@@ -3,7 +3,7 @@ def f(x):
 
 # def batas_atas()
 
-def tabel(a, b, n, h):
+def tabel():
     a = int(input("Masukkan batas atas = "))
     b = int(input("Masukkan batas bawah = "))
     n = int(input("Masukkan jumlah iterasi = "))
@@ -13,9 +13,8 @@ def tabel(a, b, n, h):
         xi = (b+(i*h))
         y = f(xi)
 
-        print (xi, y)
-
-
+        print (f"{i}\t {xi:.6f}\t {y:.6f}")
+tabel()
 
 
     
